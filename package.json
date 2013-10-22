@@ -1,12 +1,23 @@
 {
   "name": "cleanYourStyles",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "keywords": [
+    "phantomjs",
+    "css"
+  ],
+  "description": "Checker for unused styles",
+  "main": "lib/cleanYourStyles",
+  "bin": {
+    "cleanYourStyles": "./bin/cleanYourStyles"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Dmytro Yarmak",
+    "email": "dmytroyarmak@gmail.com",
+    "url": "http://github.com/dmytroyarmak"
+  },
   "license": "BSD-2-Clause",
   "dependencies": {
     "phantomjs": "~1.9.2-2"
