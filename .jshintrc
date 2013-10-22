@@ -1,9 +1,10 @@
 {
   "undef": true,
-  "unused": true,
+  "unused": false,
   "strict": false,
   "globals": {
     "require": false,
+    "exports": false,
     "console": false,
     "phantom": false
   }
