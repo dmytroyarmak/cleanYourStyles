@@ -21,6 +21,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "phantomjs": "~1.9.2-2",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "async": "~0.2.9"
   }
 }
