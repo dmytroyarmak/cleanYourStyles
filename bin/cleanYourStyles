@@ -7,7 +7,7 @@
 var path = require('path');
 var spawn = require('child_process').spawn;
 
-var phantomejsBinPath = path.join(__dirname, '..', 'node_modules', 'phantomjs', 'bin', 'phantomjs');
+var phantomejsBinPath = require(path.join(__dirname, '..', 'node_modules', 'phantomjs', 'lib', 'phantomjs')).path
 
 var args = process.argv.slice(2);
 args.unshift(path.join(__dirname, '..', 'lib', 'cleanYourStyles.js'));
@@ -18,7 +18,7 @@ cp.stderr.pipe(process.stderr);
 process.stdin.pipe(cp.stdin);
 
 cp.on('error', function (err) {
-  console.error('Error executing at', phantomejsBinPath);
+  console.error('Error executing phantom at', phantomejsBinPath);
   console.error(err.stack);
 })
 cp.on('exit', process.exit);
